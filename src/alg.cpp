@@ -10,9 +10,11 @@ for (i = 2; i <= value; i++) {
   } else {
   return true;
   }
+} 
 } else {
   return false;
 }
+return 0;
 }
 uint64_t nPrime(uint64_t n) {
 int pnomer = 1, nomer = 0;
@@ -23,6 +25,7 @@ while (nomer != n) {
   }
   return pnomer;
 }
+return 0;
 }
 uint64_t nextPrime(uint64_t value) {
 int next = value + 1;
@@ -39,4 +42,5 @@ for (i = 2; i < hbound; i++) {
   }
   return s;
 }
+return 0;
 }
