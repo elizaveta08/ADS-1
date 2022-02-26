@@ -3,11 +3,10 @@
 #include "alg.h"
 bool checkPrime(uint64_t value) {
  if (value > 1) {
-  for (int i == 2,i<=value,i++) {
+  for (int i == 2, i<=value, i++) {
     if (value % i == 0) {
       return false;
-      } else
-      {
+      } else {
       return true;
       }
   } else {
@@ -19,7 +18,7 @@ uint64_t nPrime(uint64_t n) {
  nomer == 0;
   while (nomer != n) {
     if (checkPrime(pnomer)) {
- nomer++; 
+ nomer++;
  pnomer++;
     }
   return pnomer;
