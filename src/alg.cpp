@@ -43,4 +43,5 @@ for (i = 2; i < hbound; i++) {
   }
   return s;
 }
+return 0;
 }
