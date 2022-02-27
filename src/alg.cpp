@@ -2,19 +2,20 @@
 #include <cstdint>
 #include "alg.h"
 bool checkPrime(uint64_t value) {
+boll prostoe = true;
 if (value > 1) {
 int i;
 for (i = 2; i <= value; i++) {
   if (value % i == 0) {
-  return false;
+  prostoe = false;
   } else {
-  return true;
+  prostoe = true;
   }
 }
 } else {
-  return false;
+  prostoe = false;
 }
-return 0;
+return prostoe;
 }
 uint64_t nPrime(uint64_t n) {
 int pnomer = 1, nomer = 0;
@@ -42,5 +43,4 @@ for (i = 2; i < hbound; i++) {
   }
   return s;
 }
-return 0;
 }
