@@ -10,7 +10,7 @@ for (i = 2; i <= value; i++) {
   } else {
   return true;
   }
-} 
+}
 } else {
   return false;
 }
