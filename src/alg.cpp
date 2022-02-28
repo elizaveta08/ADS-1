@@ -41,7 +41,7 @@ uint64_t sumPrime(uint64_t hbound) {
 int i, s = 0;
 if (hbound > 3) {
 for (i = 3; i < hbound; i++) {
-  if (checkPrime(i)!=false) {
+  if (checkPrime(i)) {
   s += i;
   }
   }
