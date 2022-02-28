@@ -3,22 +3,21 @@
 #include <cstdint>
 #include <cmath>
 bool checkPrime(uint64_t value) {
-bool pr = true;
+bool prostoe = true;
 if (value > 1) {
 int i;
-bool pr = true;
 for (i = 2; i <= sqrt(value); i++) {
   if (value % i == 0) {
-  pr = false;
+ prostoe = false;
   break;
-  } else {
-  pr = true;
+ } else {
+ prostoe = true;
   }
 }
 } else {
-  pr = false;
+ prostoe = false;
 }
-return pr;
+return prostoe;
 }
 uint64_t nPrime(uint64_t n) {
 int hs = 0, kp = 0;
@@ -41,9 +40,9 @@ return 0;
 uint64_t sumPrime(uint64_t hbound) {
 int i, s = 0;
 if (hbound > 3) {
-for (i = 3; i < hbound; i++) {
+for (i = 2; i < hbound; i++) {
   if (checkPrime(i)) {
-  s += i;
+ s += i;
   }
   }
   return s;
