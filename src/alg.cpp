@@ -5,7 +5,7 @@ bool checkPrime(uint64_t value) {
 bool prostoe = true;
 if (value > 1) {
 int i;
-for (i = 2; i <= value; i++) {
+for (i = 2; i <= sqrt(value); i++) {
   if (value % i == 0) {
   prostoe = false;
   } else {
@@ -34,6 +34,7 @@ while (!checkPrime(next)) {
 next++;
 }
 return next;
+return 0;
 }
 uint64_t sumPrime(uint64_t hbound) {
 int i, s = 0;
