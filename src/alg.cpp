@@ -1,5 +1,4 @@
 // Copyright 2022 NNTU-CS
-#include <cstdint>
 #include "alg.h"
 #include <cstdint>
 #include <cmath>
@@ -21,14 +20,13 @@ for (i = 2; i <= sqrt(value); i++) {
 return prostoe;
 }
 uint64_t nPrime(uint64_t n) {
-int pnomer = 1, nomer = 0;
-while (nomer != n) {
-  if (checkPrime(pnomer)) {
-  nomer++;
-  pnomer++;
-  }
-  return pnomer;
+int hs = 0, kp = 0;
+while (kp != n) {
+hs++;
+if (checkPrime(hs))
+kp++;
 }
+return hs;
 return 0;
 }
 uint64_t nextPrime(uint64_t value) {
@@ -40,10 +38,12 @@ return next;
 return 0;
 }
 uint64_t sumPrime(uint64_t hbound) {
+if (hbound > 2) {
 int i, s = 0;
 for (i = 2; i < hbound; i++) {
   if (checkPrime(i)) {
   s += i;
+  }
   }
   return s;
 }
