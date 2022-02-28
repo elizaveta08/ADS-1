@@ -38,8 +38,8 @@ return next;
 return 0;
 }
 uint64_t sumPrime(uint64_t hbound) {
-if (hbound > 2) {
 int i, s = 0;
+if (hbound > 3) {
 for (i = 2; i < hbound; i++) {
   if (checkPrime(i)) {
   s += i;
