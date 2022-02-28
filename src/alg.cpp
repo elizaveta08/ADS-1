@@ -1,6 +1,7 @@
 // Copyright 2022 NNTU-CS
 #include <cstdint>
 #include "alg.h"
+#include <cstdint>
 #include <cmath>
 bool checkPrime(uint64_t value) {
 bool prostoe = true;
@@ -9,6 +10,7 @@ int i;
 for (i = 2; i <= sqrt(value); i++) {
   if (value % i == 0) {
   prostoe = false;
+  break;
   } else {
   prostoe = true;
   }
