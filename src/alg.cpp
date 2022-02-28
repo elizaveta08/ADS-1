@@ -3,9 +3,9 @@
 #include <cstdint>
 #include <cmath>
 bool checkPrime(uint64_t value) {
+bool pr = true;
 if (value > 1) {
 int i;
-bool pr = true;
 for (i = 2; i <= sqrt(value); i++) {
   if (value % i == 0) {
   pr = false;
@@ -15,7 +15,7 @@ for (i = 2; i <= sqrt(value); i++) {
   }
 }
 } else {
-  break;
+  pr = false;
 }
 return pr;
 }
