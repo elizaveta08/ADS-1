@@ -8,14 +8,14 @@ if (value > 1) {
 int i;
 for (i = 2; i <= sqrt(value); i++) {
   if (value % i == 0) {
- prostoe = false;
+prostoe = false;
   break;
- } else {
- prostoe = true;
+} else {
+prostoe = true;
   }
 }
 } else {
- prostoe = false;
+prostoe = false;
 }
 return prostoe;
 }
@@ -42,7 +42,7 @@ int i, s = 0;
 if (hbound > 3) {
 for (i = 2; i < hbound; i++) {
   if (checkPrime(i)) {
- s += i;
+s += i;
   }
   }
   return s;
